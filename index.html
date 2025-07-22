@@ -7,17 +7,17 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://your-username.github.io/church-ai-readiness-checklist/">
+    <meta property="og:url" content="https://takwhankim.github.io/church-ai-readiness-checklist/">
     <meta property="og:title" content="목회자 및 사역자용 AI 도입 체크리스트">
     <meta property="og:description" content="교회의 AI 도입 준비 상태를 종합적으로 평가할 수 있는 인터랙티브 체크리스트입니다. 7개 영역 11개 질문으로 객관적인 평가를 제공합니다.">
-    <meta property="og:image" content="https://your-username.github.io/church-ai-readiness-checklist/og-image.png">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop&crop=center">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://your-username.github.io/church-ai-readiness-checklist/">
+    <meta property="twitter:url" content="https://takwhankim.github.io/church-ai-readiness-checklist/">
     <meta property="twitter:title" content="목회자 및 사역자용 AI 도입 체크리스트">
     <meta property="twitter:description" content="교회의 AI 도입 준비 상태를 종합적으로 평가할 수 있는 인터랙티브 체크리스트입니다.">
-    <meta property="twitter:image" content="https://your-username.github.io/church-ai-readiness-checklist/og-image.png">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop&crop=center">
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="교회의 AI 도입 준비 상태를 종합적으로 평가할 수 있는 인터랙티브 체크리스트입니다. 7개 영역 11개 질문으로 객관적인 평가를 제공합니다.">
@@ -83,6 +83,157 @@
         
         .content {
             padding: 40px;
+        }
+        
+        .info-section {
+            margin-bottom: 50px;
+        }
+        
+        .info-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 4px solid #4158d0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .info-card h2 {
+            color: #4158d0;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .info-card p {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+        
+        .evaluation-areas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .area-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        
+        .area-item:hover {
+            background: #e9ecef;
+        }
+        
+        .area-number {
+            background: #4158d0;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        
+        .scoring-system {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .score-range {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .score-range:hover {
+            transform: scale(1.02);
+        }
+        
+        .score-range.excellent {
+            background: linear-gradient(135deg, #11998e20 0%, #38ef7d20 100%);
+            border: 2px solid #11998e40;
+        }
+        
+        .score-range.good {
+            background: linear-gradient(135deg, #f093fb20 0%, #f5576c20 100%);
+            border: 2px solid #f093fb40;
+        }
+        
+        .score-range.caution {
+            background: linear-gradient(135deg, #ffecd220 0%, #fcb69f20 100%);
+            border: 2px solid #fcb69f40;
+        }
+        
+        .score-range.poor {
+            background: linear-gradient(135deg, #ff9a9e20 0%, #fecfef20 100%);
+            border: 2px solid #ff9a9e40;
+        }
+        
+        .score-badge {
+            background: #4158d0;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-right: 20px;
+            white-space: nowrap;
+        }
+        
+        .score-info h3 {
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        
+        .score-info p {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .start-notice {
+            background: linear-gradient(135deg, #4158d0 0%, #c850c0 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(65, 88, 208, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(65, 88, 208, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(65, 88, 208, 0); }
+        }
+        
+        .start-notice p {
+            margin: 0;
+            font-size: 1.1em;
+            font-weight: 500;
         }
         
         .section {
@@ -275,6 +426,20 @@
             transition: width 0.3s ease;
         }
         
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            margin-top: 40px;
+        }
+        
+        footer p {
+            color: #666;
+            font-size: 0.9em;
+            margin: 0;
+        }
+        
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2em;
@@ -298,6 +463,30 @@
                 flex-direction: row;
                 justify-content: space-between;
             }
+            
+            .scoring-system {
+                gap: 10px;
+            }
+            
+            .score-range {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+                gap: 10px;
+            }
+            
+            .score-badge {
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
+            
+            .evaluation-areas {
+                grid-template-columns: 1fr;
+            }
+            
+            .info-card {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -312,6 +501,91 @@
         </div>
         
         <div class="content">
+            <!-- 설명문 섹션 -->
+            <div class="info-section">
+                <div class="info-card">
+                    <h2>설문 목적</h2>
+                    <p>이 체크리스트는 교회가 AI 기술을 도입하기 전에 준비 상태를 객관적으로 평가하기 위해 개발되었습니다. 목회자와 사역자들이 AI 도입에 대한 현실적이고 체계적인 접근을 할 수 있도록 돕는 것이 목표입니다.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h2>평가 영역 (7개 분야)</h2>
+                    <div class="evaluation-areas">
+                        <div class="area-item">
+                            <span class="area-number">1</span>
+                            <span>AI 도입의 목적과 필요성</span>
+                        </div>
+                        <div class="area-item">
+                            <span class="area-number">2</span>
+                            <span>AI 도입 목표의 일관성 및 전략</span>
+                        </div>
+                        <div class="area-item">
+                            <span class="area-number">3</span>
+                            <span>AI 기술 및 인프라 준비 상태</span>
+                        </div>
+                        <div class="area-item">
+                            <span class="area-number">4</span>
+                            <span>AI의 신앙적 가치와 윤리적 측면</span>
+                        </div>
+                        <div class="area-item">
+                            <span class="area-number">5</span>
+                            <span>AI 도입 후 운영 및 유지 관리</span>
+                        </div>
+                        <div class="area-item">
+                            <span class="area-number">6</span>
+                            <span>신도들의 반응 및 수용 준비</span>
+                        </div>
+                        <div class="area-item">
+                            <span class="area-number">7</span>
+                            <span>데이터 보안 및 개인정보 보호</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <h2>채점 방식</h2>
+                    <div class="scoring-system">
+                        <div class="score-range excellent">
+                            <div class="score-badge">44-55점</div>
+                            <div class="score-info">
+                                <h3>적극 추천</h3>
+                                <p>AI 도입을 위한 충분한 준비가 완료되었습니다. 바로 도입을 추진할 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="score-range good">
+                            <div class="score-badge">33-43점</div>
+                            <div class="score-info">
+                                <h3>보통 (준비 필요)</h3>
+                                <p>기본적인 준비는 되어있으나 추가적인 개선과 구체적인 계획 수립이 필요합니다.</p>
+                            </div>
+                        </div>
+                        <div class="score-range caution">
+                            <div class="score-badge">24-32점</div>
+                            <div class="score-info">
+                                <h3>주의 필요</h3>
+                                <p>여러 준비가 부족합니다. 신중한 검토와 단계적 접근이 필요합니다.</p>
+                            </div>
+                        </div>
+                        <div class="score-range poor">
+                            <div class="score-badge">23점 이하</div>
+                            <div class="score-info">
+                                <h3>도입 재검토</h3>
+                                <p>AI 도입을 위한 기초 준비가 부족합니다. 장기적 관점에서 준비를 시작하세요.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <h2>소요 시간</h2>
+                    <p><strong>약 5-10분</strong> 정도 소요됩니다. 총 11개의 질문에 리커트 5점 척도(1점: 전혀 그렇지 않다 ~ 5점: 매우 그렇다)로 응답하시면 됩니다.</p>
+                </div>
+                
+                <div class="start-notice">
+                    <p>준비되셨다면 아래 질문들에 솔직하게 답변해 주세요!</p>
+                </div>
+            </div>
+
             <form id="checklistForm">
                 <div class="section">
                     <h2><span class="section-number">1</span>AI 도입의 목적과 필요성</h2>
@@ -728,8 +1002,8 @@
             </div>
         </div>
         
-        <footer style="text-align: center; padding: 20px; background: #f8f9fa; border-top: 1px solid #e9ecef; margin-top: 40px;">
-            <p style="color: #666; font-size: 0.9em; margin: 0;">
+        <footer>
+            <p>
                 © 2025 Created by <strong>onmam</strong>
             </p>
         </footer>
@@ -737,7 +1011,7 @@
 
     <script>
         function updateProgress() {
-            const totalQuestions = 9;
+            const totalQuestions = 11;
             let answeredQuestions = 0;
             
             // 모든 질문에 대해 응답이 있는지 확인
@@ -802,18 +1076,18 @@
             totalScoreDiv.textContent = totalScore + '점';
             
             // 점수에 따른 결과 분류
-            if (totalScore >= 44) { // 55점을 11개 질문 기준으로 조정 (55/11*10 = 50, 약간 낮춤)
+            if (totalScore >= 44) {
                 resultDiv.className = 'result excellent';
                 resultTitle.textContent = '적극 추천';
                 recommendation.innerHTML = `
                     <strong>축하합니다!</strong><br>
                     AI 도입을 위한 충분한 준비가 되어 있으며, 교회 운영과 신앙 성장에 긍정적인 영향을 미칠 것입니다. 
                     바로 도입을 추진할 수 있습니다.<br><br>
-                    <em>✓ 목적과 전략이 명확하게 정의되어 있습니다</em><br>
-                    <em>✓ 기술적 준비가 잘 되어 있습니다</em><br>
-                    <em>✓ 신앙적 가치와 윤리적 고려가 충분합니다</em>
+                    <em>목적과 전략이 명확하게 정의되어 있습니다</em><br>
+                    <em>기술적 준비가 잘 되어 있습니다</em><br>
+                    <em>신앙적 가치와 윤리적 고려가 충분합니다</em>
                 `;
-            } else if (totalScore >= 33) { // 40점을 11개 질문 기준으로 조정 (40/11*10 = 36, 약간 낮춤)
+            } else if (totalScore >= 33) {
                 resultDiv.className = 'result good';
                 resultTitle.textContent = '보통 (준비 필요)';
                 recommendation.innerHTML = `
@@ -824,7 +1098,7 @@
                     • 신도들의 수용성 향상 방안<br>
                     • 윤리적 가이드라인 수립
                 `;
-            } else if (totalScore >= 24) { // 30점을 11개 질문 기준으로 조정 (30/11*10 = 27, 약간 낮춤)
+            } else if (totalScore >= 24) {
                 resultDiv.className = 'result caution';
                 resultTitle.textContent = '주의 필요';
                 recommendation.innerHTML = `
