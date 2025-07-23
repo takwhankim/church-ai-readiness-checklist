@@ -19,7 +19,7 @@
     <meta property="twitter:url" content="https://takwhankim.github.io/church-ai-readiness-checklist/">
     <meta property="twitter:title" content="목회자 및 사역자용 AI 도입 체크리스트">
     <meta property="twitter:description" content="교회의 AI 도입 준비 상태를 종합적으로 평가할 수 있는 인터랙티브 체크리스트입니다.">
-    <meta property="twitter:image" content="https://takwhankim.github.io/church-ai-readiness-checklist/pastor.png")
+    <meta property="twitter:image" content="https://takwhankim.github.io/church-ai-readiness-checklist/pastor.png">
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="교회의 AI 도입 준비 상태를 종합적으로 평가할 수 있는 인터랙티브 체크리스트입니다. 7개 영역 11개 질문으로 객관적인 평가를 제공합니다.">
@@ -585,7 +585,7 @@
                 </div>
                 
                 <div class="start-notice">
-                    <p>준비되셨다면 아래 질문들에 솔직하게 답변해 주세요!</p>
+                    <p>준비되셨다면 아래 질문들에 신중하게 답변해 주세요!</p>
                 </div>
             </div>
 
@@ -1022,13 +1022,13 @@
                 if (i === 1 || i === 2 || i === 3 || i === 4) {
                     // 섹션 1-4는 각각 2개의 질문
                     for (let j = 1; j <= 2; j++) {
-                        if (document.querySelector(input[name="q${i}_${j}"]:checked)) {
+                        if (document.querySelector(`input[name="q${i}_${j}"]:checked`)) {
                             answeredQuestions++;
                         }
                     }
                 } else {
                     // 섹션 5, 6, 7은 각각 1개의 질문
-                    if (document.querySelector(input[name="q${i}_1"]:checked)) {
+                    if (document.querySelector(`input[name="q${i}_1"]:checked`)) {
                         answeredQuestions++;
                     }
                 }
@@ -1056,7 +1056,7 @@
             let unansweredQuestions = [];
             
             questions.forEach((question, index) => {
-                const selectedOption = document.querySelector(input[name="${question}"]:checked);
+                const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
                 if (selectedOption) {
                     totalScore += parseInt(selectedOption.value);
                 } else {
@@ -1082,29 +1082,29 @@
             if (totalScore >= 44) {
                 resultDiv.className = 'result excellent';
                 resultTitle.textContent = '적극 추천';
-                recommendation.innerHTML = 
+                recommendation.innerHTML = `
                     <strong>축하합니다!</strong><br>
                     AI 도입을 위한 충분한 준비가 되어 있으며, 교회 운영과 신앙 성장에 긍정적인 영향을 미칠 것입니다. 
                     바로 도입을 추진할 수 있습니다.<br><br>
                     <em>목적과 전략이 명확하게 정의되어 있습니다</em><br>
                     <em>기술적 준비가 잘 되어 있습니다</em><br>
                     <em>신앙적 가치와 윤리적 고려가 충분합니다</em>
-                ;
+                `;
             } else if (totalScore >= 33) {
                 resultDiv.className = 'result good';
                 resultTitle.textContent = '보통 (준비 필요)';
-                recommendation.innerHTML = 
+                recommendation.innerHTML = `
                     준비가 어느 정도 되어 있으나, 추가적인 개선과 검토가 필요합니다.<br>
                     AI 도입을 위해 구체적인 계획을 수립하는 것이 필요합니다.<br><br>
                     <strong>개선이 필요한 영역:</strong><br>
                     • 기술적 인프라 점검 및 보완<br>
                     • 신도들의 수용성 향상 방안<br>
                     • 윤리적 가이드라인 수립
-                ;
+                `;
             } else if (totalScore >= 24) {
                 resultDiv.className = 'result caution';
                 resultTitle.textContent = '주의 필요';
-                recommendation.innerHTML = 
+                recommendation.innerHTML = `
                     AI 도입에 있어 여러 준비가 부족할 수 있습니다.<br>
                     신중한 검토가 필요하며, 추가적인 준비가 필요합니다.<br><br>
                     <strong>우선 개선 사항:</strong><br>
@@ -1112,11 +1112,11 @@
                     • 기술적 역량 강화<br>
                     • 교회 구성원들과의 소통 확대<br>
                     • 단계적 도입 계획 수립
-                ;
+                `;
             } else {
                 resultDiv.className = 'result poor';
                 resultTitle.textContent = '도입 재검토';
-                recommendation.innerHTML = 
+                recommendation.innerHTML = `
                     교회가 AI 도입을 위한 준비가 부족하며, 도입을 재검토해야 할 단계입니다.<br><br>
                     <strong>권장사항:</strong><br>
                     • AI에 대한 기본 이해도 향상<br>
@@ -1124,7 +1124,7 @@
                     • 구성원들과의 충분한 논의<br>
                     • 전문가 상담 및 교육 프로그램 참여<br>
                     • 장기적 관점에서의 단계적 접근
-                ;
+                `;
             }
             
             resultDiv.style.display = 'block';
@@ -1137,4 +1137,5 @@
         });
     </script>
 </body>
-</html> 
+</html>5">
+                                <label for="q2_2_
