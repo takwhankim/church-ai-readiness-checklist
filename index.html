@@ -9,7 +9,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://takwhankim.github.io/church-ai-readiness-checklist/">
     <meta property="og:title" content="목회자 및 사역자용 AI 도입 체크리스트">
-    <meta property="og:description" content="교회의 AI 도입 준비 상태를 종합적으로 평가할 수 있는 인터랙티브 체크리스트입니다. 7개 영역 11개 질문으로 객관적인 평가를 제공합니다.">
+    <meta property="og:description" content="교회의 AI 도입 준비 상태를 종합적으로 평가할 수 있는 인터랙티브 체크리스트입니다. 7개 영역 15개 질문으로 객관적인 평가를 제공합니다.">
     <meta property="og:image" content="https://takwhankim.github.io/church-ai-readiness-checklist/pastor.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -22,7 +22,7 @@
     <meta property="twitter:image" content="https://takwhankim.github.io/church-ai-readiness-checklist/pastor.png">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="교회의 AI 도입 준비 상태를 종합적으로 평가할 수 있는 인터랙티브 체크리스트입니다. 7개 영역 11개 질문으로 객관적인 평가를 제공합니다.">
+    <meta name="description" content="교회의 AI 도입 준비 상태를 종합적으로 평가할 수 있는 인터랙티브 체크리스트입니다. 7개 영역 15개 질문으로 객관적인 평가를 제공합니다.">
     <meta name="keywords" content="AI 도입, 교회, 목회자, 사역자, 체크리스트, 인공지능, 교회 기술, 디지털 교회">
     <meta name="author" content="onmam">
     
@@ -39,7 +39,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f0f4f8;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
         }
@@ -66,7 +66,7 @@
         }
         
         .header {
-            background: #667eea;
+            background: linear-gradient(135deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
             color: white;
             padding: 40px;
             text-align: center;
@@ -342,7 +342,7 @@
         }
         
         .calculate-btn {
-            background: #ff6b6b;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 15px 40px;
             border: none;
@@ -353,13 +353,12 @@
             transition: all 0.3s ease;
             display: block;
             margin: 40px auto;
-            box-shadow: 0 5px 20px rgba(255, 107, 107, 0.2);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
         }
         
         .calculate-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
-            background: #ff5252;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
         }
         
         .result {
@@ -377,23 +376,23 @@
         }
         
         .result.excellent {
-            background: #10b981;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
             color: white;
         }
         
         .result.good {
-            background: #3b82f6;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             color: white;
         }
         
         .result.caution {
-            background: #f59e0b;
-            color: white;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            color: #333;
         }
         
         .result.poor {
-            background: #ef4444;
-            color: white;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            color: #333;
         }
         
         .result h2 {
@@ -423,24 +422,10 @@
         
         .progress {
             height: 100%;
-            background: #ff6b6b;
+            background: linear-gradient(90deg, #667eea, #764ba2);
             border-radius: 4px;
             width: 0%;
             transition: width 0.3s ease;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #f8f9fa;
-            border-top: 1px solid #e9ecef;
-            margin-top: 40px;
-        }
-        
-        footer p {
-            color: #666;
-            font-size: 0.9em;
-            margin: 0;
         }
         
         @media (max-width: 768px) {
@@ -498,9 +483,6 @@
         <div class="header">
             <h1>목회자 및 사역자용 AI 도입 체크리스트</h1>
             <p>교회의 AI 도입 준비 상태를 체크해보세요</p>
-            <div style="margin-top: 15px; opacity: 0.8; font-size: 0.9em;">
-                © 2025 Created by onmam
-            </div>
         </div>
         
         <div class="content">
@@ -549,28 +531,28 @@
                     <h2>채점 방식</h2>
                     <div class="scoring-system">
                         <div class="score-range excellent">
-                            <div class="score-badge">44-55점</div>
+                            <div class="score-badge">60-75점</div>
                             <div class="score-info">
                                 <h3>적극 추천</h3>
                                 <p>AI 도입을 위한 충분한 준비가 완료되었습니다. 바로 도입을 추진할 수 있습니다.</p>
                             </div>
                         </div>
                         <div class="score-range good">
-                            <div class="score-badge">33-43점</div>
+                            <div class="score-badge">45-59점</div>
                             <div class="score-info">
                                 <h3>보통 (준비 필요)</h3>
                                 <p>기본적인 준비는 되어있으나 추가적인 개선과 구체적인 계획 수립이 필요합니다.</p>
                             </div>
                         </div>
                         <div class="score-range caution">
-                            <div class="score-badge">24-32점</div>
+                            <div class="score-badge">30-44점</div>
                             <div class="score-info">
                                 <h3>주의 필요</h3>
                                 <p>여러 준비가 부족합니다. 신중한 검토와 단계적 접근이 필요합니다.</p>
                             </div>
                         </div>
                         <div class="score-range poor">
-                            <div class="score-badge">23점 이하</div>
+                            <div class="score-badge">29점 이하</div>
                             <div class="score-info">
                                 <h3>도입 재검토</h3>
                                 <p>AI 도입을 위한 기초 준비가 부족합니다. 장기적 관점에서 준비를 시작하세요.</p>
@@ -581,7 +563,7 @@
                 
                 <div class="info-card">
                     <h2>소요 시간</h2>
-                    <p><strong>약 5-10분</strong> 정도 소요됩니다. 총 11개의 질문에 리커트 5점 척도(1점: 전혀 그렇지 않다 ~ 5점: 매우 그렇다)로 응답하시면 됩니다.</p>
+                    <p><strong>약 5-10분</strong> 정도 소요됩니다. 총 15개의 질문에 리커트 5점 척도(1점: 전혀 그렇지 않다 ~ 5점: 매우 그렇다)로 응답하시면 됩니다.</p>
                 </div>
                 
                 <div class="start-notice">
@@ -593,46 +575,162 @@
                 <div class="section">
                     <h2><span class="section-number">1</span>AI 도입의 목적과 필요성</h2>
                     
-                    <div class="question">
-                        <h3>AI 도입의 구체적인 목적이 무엇인가요?</h3>
-                        <div class="description">
-                            예배의 효율성을 높이기 위함인가요? (예: 예배 준비, 설교 자동화)<br>
-                            성도 관리 및 소통 강화 목적인가요? (예: 출석 관리, 개인 맞춤형 피드백)<br>
-                            선교 및 지역 사회와의 관계를 증진시키기 위한 목적인가요?
-                        </div>
-                        <div class="likert-scale">
-                            <div class="scale-option">
-                                <input type="radio" name="q1_1" value="1" id="q1_1_1">
-                                <label for="q1_1_1">1</label>
-                            </div>
-                            <div class="scale-option">
-                                <input type="radio" name="q1_1" value="2" id="q1_1_2">
-                                <label for="q1_1_2">2</label>
-                            </div>
-                            <div class="scale-option">
-                                <input type="radio" name="q1_1" value="3" id="q1_1_3">
-                                <label for="q1_1_3">3</label>
-                            </div>
-                            <div class="scale-option">
-                                <input type="radio" name="q1_1" value="4" id="q1_1_4">
-                                <label for="q1_1_4">4</label>
-                            </div>
-                            <div class="scale-option">
-                                <input type="radio" name="q1_1" value="5" id="q1_1_5">
-                                <label for="q1_1_5">5</label>
-                            </div>
-                        </div>
-                        <div class="scale-labels">
-                            <span>전혀 그렇지 않다</span>
-                            <span>매우 그렇다</span>
-                        </div>
+                    <div style="margin-bottom: 20px; padding: 15px; background: #e8f4fd; border-radius: 8px; border-left: 4px solid #4158d0;">
+                        <h3 style="margin-bottom: 15px; color: #4158d0;">다음 각 영역에서 AI 도입의 필요성을 평가해주세요:</h3>
                     </div>
                     
                     <div class="question">
-                        <h3>AI 도입을 통해 해결하고자 하는 핵심 문제는 무엇인가요?</h3>
-                        <div class="description">
-                            예배 진행의 효율성, 성도들의 참여도 향상, 봉사자 관리의 효율화, 선교 활동의 디지털화 등
+                        <h3>예배 준비 및 진행 효율화</h3>
+                        <div class="likert-scale">
+                            <div class="scale-option">
+                                <input type="radio" name="worship_efficiency" value="1" id="worship_1">
+                                <label for="worship_1">1</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="worship_efficiency" value="2" id="worship_2">
+                                <label for="worship_2">2</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="worship_efficiency" value="3" id="worship_3">
+                                <label for="worship_3">3</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="worship_efficiency" value="4" id="worship_4">
+                                <label for="worship_4">4</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="worship_efficiency" value="5" id="worship_5">
+                                <label for="worship_5">5</label>
+                            </div>
                         </div>
+                        <div class="scale-labels">
+                            <span>전혀 필요없음</span>
+                            <span>매우 필요함</span>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>성도 관리 및 소통 개선</h3>
+                        <div class="likert-scale">
+                            <div class="scale-option">
+                                <input type="radio" name="member_management" value="1" id="member_1">
+                                <label for="member_1">1</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="member_management" value="2" id="member_2">
+                                <label for="member_2">2</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="member_management" value="3" id="member_3">
+                                <label for="member_3">3</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="member_management" value="4" id="member_4">
+                                <label for="member_4">4</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="member_management" value="5" id="member_5">
+                                <label for="member_5">5</label>
+                            </div>
+                        </div>
+                        <div class="scale-labels">
+                            <span>전혀 필요없음</span>
+                            <span>매우 필요함</span>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>교육 콘텐츠 제작 지원</h3>
+                        <div class="likert-scale">
+                            <div class="scale-option">
+                                <input type="radio" name="education_content" value="1" id="education_1">
+                                <label for="education_1">1</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="education_content" value="2" id="education_2">
+                                <label for="education_2">2</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="education_content" value="3" id="education_3">
+                                <label for="education_3">3</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="education_content" value="4" id="education_4">
+                                <label for="education_4">4</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="education_content" value="5" id="education_5">
+                                <label for="education_5">5</label>
+                            </div>
+                        </div>
+                        <div class="scale-labels">
+                            <span>전혀 필요없음</span>
+                            <span>매우 필요함</span>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>행정업무 자동화</h3>
+                        <div class="likert-scale">
+                            <div class="scale-option">
+                                <input type="radio" name="admin_automation" value="1" id="admin_1">
+                                <label for="admin_1">1</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="admin_automation" value="2" id="admin_2">
+                                <label for="admin_2">2</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="admin_automation" value="3" id="admin_3">
+                                <label for="admin_3">3</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="admin_automation" value="4" id="admin_4">
+                                <label for="admin_4">4</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="admin_automation" value="5" id="admin_5">
+                                <label for="admin_5">5</label>
+                            </div>
+                        </div>
+                        <div class="scale-labels">
+                            <span>전혀 필요없음</span>
+                            <span>매우 필요함</span>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>선교 및 전도 활동 지원</h3>
+                        <div class="likert-scale">
+                            <div class="scale-option">
+                                <input type="radio" name="mission_support" value="1" id="mission_1">
+                                <label for="mission_1">1</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="mission_support" value="2" id="mission_2">
+                                <label for="mission_2">2</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="mission_support" value="3" id="mission_3">
+                                <label for="mission_3">3</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="mission_support" value="4" id="mission_4">
+                                <label for="mission_4">4</label>
+                            </div>
+                            <div class="scale-option">
+                                <input type="radio" name="mission_support" value="5" id="mission_5">
+                                <label for="mission_5">5</label>
+                            </div>
+                        </div>
+                        <div class="scale-labels">
+                            <span>전혀 필요없음</span>
+                            <span>매우 필요함</span>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>AI 도입을 통해 해결하고자 하는 핵심 문제가 구체적으로 정의되어 있습니까?</h3>
                         <div class="likert-scale">
                             <div class="scale-option">
                                 <input type="radio" name="q1_2" value="1" id="q1_2_1">
@@ -656,8 +754,8 @@
                             </div>
                         </div>
                         <div class="scale-labels">
-                            <span>전혀 그렇지 않다</span>
-                            <span>매우 구체적이다</span>
+                            <span>전혀 정의되지 않음</span>
+                            <span>매우 구체적으로 정의됨</span>
                         </div>
                     </div>
                 </div>
@@ -699,12 +797,7 @@
                     </div>
                     
                     <div class="question">
-                        <h3>AI 도입이 교회의 사역 전략과 어떻게 맞물릴까요?</h3>
-                        <div class="description">
-                            예배의 질을 향상시키기 위한 전략으로 AI가 어떻게 도입될 수 있을까요?<br>
-                            성도들의 신앙 성장 및 참여를 촉진하기 위한 방안으로 AI가 어떻게 기여할 수 있을까요?<br>
-                            선교 활동의 전략적 확장을 위해 AI는 어떤 역할을 할 수 있을까요?
-                        </div>
+                        <h3>AI 도입이 우리 교회의 핵심 사역 목표 달성에 어느 정도 도움이 될 것이라고 생각하십니까?</h3>
                         <div class="likert-scale">
                             <div class="scale-option">
                                 <input type="radio" name="q2_2" value="1" id="q2_2_1">
@@ -728,8 +821,8 @@
                             </div>
                         </div>
                         <div class="scale-labels">
-                            <span>전혀 부합하지 않는다</span>
-                            <span>매우 부합한다</span>
+                            <span>전혀 도움 안됨</span>
+                            <span>매우 큰 도움</span>
                         </div>
                     </div>
                 </div>
@@ -738,12 +831,13 @@
                     <h2><span class="section-number">3</span>AI 기술 및 인프라 준비 상태</h2>
                     
                     <div class="question">
-                        <h3>교회의 현재 IT지원 환경은 어느 정도인가요?</h3>
+                        <h3>교회의 현재 IT 인프라 수준은 어디에 해당합니까?</h3>
                         <div class="description">
-                            안정적인 인터넷과 WiFi가 잘 구축되어 있고 최신 컴퓨터나 태블릿을 충분히 보유하고 있는지,
-                            아니면 기본적인 인터넷 연결과 사용 가능한 컴퓨터가 1-2대 정도만 있는지 평가해주세요.
-                            인터넷은 연결되어 있지만 컴퓨터나 디지털 기기가 부족하거나, 스마트폰은 있지만 컴퓨터나
-                            다른 기기는 거의 없는 상황일 수도 있습니다.
+                            ① 기본 인터넷 연결만 있음 (컴퓨터 1-2대)<br>
+                            ② 안정적 WiFi + 기본 장비 보유<br>
+                            ③ 충분한 디지털 기기와 안정적 네트워크<br>
+                            ④ 최신 장비와 전문적 IT 환경 구축<br>
+                            ⑤ 완벽한 디지털 인프라 시스템
                         </div>
                         <div class="likert-scale">
                             <div class="scale-option">
@@ -768,17 +862,16 @@
                             </div>
                         </div>
                         <div class="scale-labels">
-                            <span>전혀 준비되지 않았다</span>
-                            <span>완벽하게 준비되었다</span>
+                            <span>기본 수준</span>
+                            <span>완벽한 수준</span>
                         </div>
                     </div>
                     
                     <div class="question">
-                        <h3>교회 내 IT 기술지원 체계는?</h3>
+                        <h3>교회 내 IT 지원팀 또는 외부 협력 업체가 충분히 준비되어 있나요?</h3>
                         <div class="description">
-                            AI 도구 사용 시 기술적 문제가 발생했을 때 도움을 받을 수 있는 체계가 어느 정도 갖춰져 있는지 평가해주세요.
-                            전담 IT 사역자나 기술 전문가가 교회에 있는지, 컴퓨터를 잘 다루는 청년이나 장년이 정기적으로 도움을 주는지,
-                            목회자가 직접 모든 기술적인 문제를 해결해야 하거나, 가족이나 지인에게 가끔씩 도움을 요청하는 상황일 수도 있습니다.
+                            AI 시스템을 구축하고 관리할 수 있는 기술적 지원팀(내부 직원/외부 파트너)이 준비되어 있나요?<br>
+                            유지보수 및 기술적 문제 해결을 위한 대응 계획이 마련되어 있나요?
                         </div>
                         <div class="likert-scale">
                             <div class="scale-option">
@@ -813,11 +906,7 @@
                     <h2><span class="section-number">4</span>AI의 신앙적 가치와 윤리적 측면</h2>
                     
                     <div class="question">
-                        <h3>AI 도입이 교회의 신앙적 가치에 부합한다고 생각하나요?</h3>
-                        <div class="description">
-                            AI 기술이 예배, 기도, 성경 교육, 성도 관리 등 신앙적 활동을 어떻게 보완할 수 있을까요?<br>
-                            AI가 신앙적 의도를 왜곡하거나 성도들과의 관계에서 불편함을 초래할 위험은 없을까요?
-                        </div>
+                        <h3>AI 기술 사용이 성경의 가르침이나 교회의 신앙 원칙과 충돌하지 않는다고 생각하십니까?</h3>
                         <div class="likert-scale">
                             <div class="scale-option">
                                 <input type="radio" name="q4_1" value="1" id="q4_1_1">
@@ -841,8 +930,8 @@
                             </div>
                         </div>
                         <div class="scale-labels">
-                            <span>전혀 부합하지 않는다</span>
-                            <span>매우 부합한다</span>
+                            <span>매우 충돌함</span>
+                            <span>전혀 충돌하지 않음</span>
                         </div>
                     </div>
                     
@@ -923,11 +1012,7 @@
                     <h2><span class="section-number">6</span>성도들의 반응 및 수용 준비</h2>
                     
                     <div class="question">
-                        <h3>성도들이 AI 시스템을 신뢰하고 수용할 준비가 되어 있다고 생각하나요?</h3>
-                        <div class="description">
-                            AI의 도입에 대한 성도들의 우려를 어떻게 해소할 수 있을까요?<br>
-                            AI 시스템의 기능과 목적에 대해 성도들에게 충분한 교육과 정보를 제공할 계획이 있나요?
-                        </div>
+                        <h3>AI 도입에 대해 성도들과 사전 논의를 진행한 정도는 어느 수준입니까?</h3>
                         <div class="likert-scale">
                             <div class="scale-option">
                                 <input type="radio" name="q6_1" value="1" id="q6_1_1">
@@ -951,8 +1036,8 @@
                             </div>
                         </div>
                         <div class="scale-labels">
-                            <span>전혀 준비되지 않았다</span>
-                            <span>완벽하게 준비되었다</span>
+                            <span>전혀 논의 안함</span>
+                            <span>충분히 논의함</span>
                         </div>
                     </div>
                 </div>
@@ -1007,35 +1092,28 @@
                 <div class="recommendation" id="recommendation"></div>
             </div>
         </div>
-        
-        <footer>
-            <p>
-                © 2025 Created by <strong>onmam</strong>
-            </p>
-        </footer>
     </div>
 
     <script>
         function updateProgress() {
-            const totalQuestions = 11;
+            const totalQuestions = 15; // 총 15개 질문
             let answeredQuestions = 0;
             
-            // 모든 질문에 대해 응답이 있는지 확인
-            for (let i = 1; i <= 7; i++) {
-                if (i === 1 || i === 2 || i === 3 || i === 4) {
-                    // 섹션 1-4는 각각 2개의 질문
-                    for (let j = 1; j <= 2; j++) {
-                        if (document.querySelector(`input[name="q${i}_${j}"]:checked`)) {
-                            answeredQuestions++;
-                        }
-                    }
-                } else {
-                    // 섹션 5, 6, 7은 각각 1개의 질문
-                    if (document.querySelector(`input[name="q${i}_1"]:checked`)) {
-                        answeredQuestions++;
-                    }
+            // 새로운 5개 영역 질문들
+            const newQuestions = ['worship_efficiency', 'member_management', 'education_content', 'admin_automation', 'mission_support'];
+            newQuestions.forEach(question => {
+                if (document.querySelector(`input[name="${question}"]:checked`)) {
+                    answeredQuestions++;
                 }
-            }
+            });
+            
+            // 기존 질문들
+            const existingQuestions = ['q1_2', 'q2_1', 'q2_2', 'q3_1', 'q3_2', 'q4_1', 'q4_2', 'q5_1', 'q6_1', 'q7_1'];
+            existingQuestions.forEach(question => {
+                if (document.querySelector(`input[name="${question}"]:checked`)) {
+                    answeredQuestions++;
+                }
+            });
             
             const progressPercentage = (answeredQuestions / totalQuestions) * 100;
             document.getElementById('progressBar').style.width = progressPercentage + '%';
@@ -1051,8 +1129,8 @@
 
         function calculateScore() {
             const questions = [
-                'q1_1', 'q1_2', 'q2_1', 'q2_2', 'q3_1', 'q3_2', 
-                'q4_1', 'q4_2', 'q5_1', 'q6_1', 'q7_1'
+                'worship_efficiency', 'member_management', 'education_content', 'admin_automation', 'mission_support',
+                'q1_2', 'q2_1', 'q2_2', 'q3_1', 'q3_2', 'q4_1', 'q4_2', 'q5_1', 'q6_1', 'q7_1'
             ];
             
             let totalScore = 0;
@@ -1069,7 +1147,7 @@
             
             // 모든 질문에 답하지 않은 경우
             if (unansweredQuestions.length > 0) {
-                alert('모든 질문에 답해주세요. 답하지 않은 질문이 있습니다.');
+                alert('모든 질문에 답해주세요. 답하지 않은 질문이 ' + unansweredQuestions.length + '개 있습니다.');
                 return;
             }
             
@@ -1079,21 +1157,21 @@
             const totalScoreDiv = document.getElementById('totalScore');
             const recommendation = document.getElementById('recommendation');
             
-            totalScoreDiv.textContent = totalScore + '점';
+            totalScoreDiv.textContent = totalScore + '/75점';
             
-            // 점수에 따른 결과 분류
-            if (totalScore >= 44) {
+            // 점수에 따른 결과 분류 (15개 질문 × 5점 = 75점 만점)
+            if (totalScore >= 60) {
                 resultDiv.className = 'result excellent';
                 resultTitle.textContent = '적극 추천';
                 recommendation.innerHTML = `
                     <strong>축하합니다!</strong><br>
                     AI 도입을 위한 충분한 준비가 되어 있으며, 교회 운영과 신앙 성장에 긍정적인 영향을 미칠 것입니다. 
                     바로 도입을 추진할 수 있습니다.<br><br>
-                    <em>목적과 전략이 명확하게 정의되어 있습니다</em><br>
-                    <em>기술적 준비가 잘 되어 있습니다</em><br>
-                    <em>신앙적 가치와 윤리적 고려가 충분합니다</em>
+                    <em>✓ 목적과 전략이 명확하게 정의되어 있습니다</em><br>
+                    <em>✓ 기술적 준비가 잘 되어 있습니다</em><br>
+                    <em>✓ 신앙적 가치와 윤리적 고려가 충분합니다</em>
                 `;
-            } else if (totalScore >= 33) {
+            } else if (totalScore >= 45) {
                 resultDiv.className = 'result good';
                 resultTitle.textContent = '보통 (준비 필요)';
                 recommendation.innerHTML = `
@@ -1104,7 +1182,7 @@
                     • 성도들의 수용성 향상 방안<br>
                     • 윤리적 가이드라인 수립
                 `;
-            } else if (totalScore >= 24) {
+            } else if (totalScore >= 30) {
                 resultDiv.className = 'result caution';
                 resultTitle.textContent = '주의 필요';
                 recommendation.innerHTML = `
